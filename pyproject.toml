@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wlm-metacognition-engine"
+version = "0.1.0"
+description = "Structured metacognition for AI reasoning: paths, consistency, dimension switching."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Wujie Gu" }
+]
+
+keywords = [
+    "WLM",
+    "metacognition",
+    "reasoning",
+    "self-monitoring",
+    "structural-reasoning",
+    "ai-safety",
+    "explainability",
+    "nlp"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/wlm-metacognition-engine"
+Documentation = "https://github.com/YOUR_USERNAME/wlm-metacognition-engine/tree/main/docs"
+Source = "https://github.com/YOUR_USERNAME/wlm-metacognition-engine"
+Issues = "https://github.com/YOUR_USERNAME/wlm-metacognition-engine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+wlm-metacognition = "wlm_metacognition_engine.cli:main"
